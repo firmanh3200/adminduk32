@@ -141,11 +141,15 @@ function updateDashboard() {
             text: 'Jenis Kelamin',
             align: 'left'
         },
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
         responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -210,11 +214,15 @@ function updateDashboard() {
             text: 'Status Kawin',
             align: 'left'
         },
-		responsive: [{
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+        responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -314,11 +322,15 @@ function updateDashboard() {
             text: 'Agama',
             align: 'left'
         },
-		responsive: [{
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+        responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -427,11 +439,15 @@ function updateDashboard() {
             text: 'Kelompok Umur',
             align: 'left'
         },
-		responsive: [{
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+        responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -535,11 +551,15 @@ function updateDashboard() {
             text: 'Pendidikan',
             align: 'left'
         },
-		responsive: [{
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+        responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -644,11 +664,15 @@ function updateDashboard() {
             text: 'Golongan Darah',
             align: 'left'
         },
-		responsive: [{
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+       responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -746,11 +770,16 @@ function updateDashboard() {
             text: 'Usia Pendidikan',
             align: 'left'
         },
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
+        
 		responsive: [{
             breakpoint: 480,
             options: {
                 chart: {
-                    width: 200
+                    width: '100%'
                 },
                 legend: {
                     position: 'bottom'
@@ -815,7 +844,7 @@ console.log("Data Pekerjaan:", pekerjaanData);
     const pie8Options = {
         chart: {
             type: 'pie',
-			width: '100%',
+	    width: '100%',
             toolbar: { show: false }
         },
         series: pekerjaanData.map(item => item.JumlahPenduduk),
@@ -824,6 +853,10 @@ console.log("Data Pekerjaan:", pekerjaanData);
             text: 'Pekerjaan',
             align: 'left'
         },
+	legend: {
+      		show: true,
+		position: 'bottom'
+	},
         responsive: [{
             breakpoint: 480,
             options: {
