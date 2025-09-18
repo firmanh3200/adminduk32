@@ -28,7 +28,7 @@ if kabterpilih and kecterpilih:
     keluarga = penduduk.groupby(['Kabupaten/Kota', 'Kecamatan', 'Kelurahan/Desa'])['Jumlah Kepala Keluarga'].sum().reset_index()
 
 with st.container(border=True):
-    st.subheader(f'Jumlah Penduduk di Kecamatan :orange[{kecterpilih}, {kabterpilih}]')
+    st.subheader(f'Jumlah Penduduk di Kecamatan :orange[{kecterpilih.title()}, {kabterpilih.title()}]')
     kol1a, kol1b = st.columns(2)
     with kol1a:
         with st.container(border=True):
@@ -47,7 +47,7 @@ with st.container(border=True):
 st.subheader('', divider='orange')
 
 with st.container(border=True):
-    st.subheader(f'Jumlah KK di Kecamatan :orange[{kecterpilih}, {kabterpilih}]')
+    st.subheader(f'Jumlah KK di Kecamatan :orange[{kecterpilih.title()}, {kabterpilih.title()}]')
     kol2a, kol2b = st.columns(2)
     with kol2a:
         with st.container(border=True):
